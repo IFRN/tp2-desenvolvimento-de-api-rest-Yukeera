@@ -31,7 +31,7 @@ class EleicaoSerializer(serializers.ModelSerializer):
         ]
 
     def get_total_candidatos(self, obj):
-        return obj.candidato_set.count()
+        return obj.candidatos.count()
 
     def get_total_aptos(self, obj):
         return obj.aptos.count()
